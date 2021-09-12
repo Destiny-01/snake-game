@@ -18,9 +18,27 @@
       #gameScreen {
         display: none;
       }
+      section {
+        display: block;
+      }
+      .mobile {
+        display: none;
+      }
+      @media screen and (max-width: 768px) {
+        section {
+          display: none;
+        }
+        .mobile {
+          display: block;
+          padding: 260px 40px;
+        }
+      }
     </style>
   </head>
   <body>
+    <div class="mobile">
+      Oops, this game can only be played on laptop because of the controls
+    </div>
     <section class="vh-100">
       <div class="container h-100">
         <div id="initialScreen" class="h-100">

@@ -1,7 +1,7 @@
 const app = require("http").createServer();
 const io = require("socket.io")(app, {
   cors: {
-    origin: "http://127.0.0.1:5500",
+    origin: "https://multi-snake-game.netlify.app",
     methods: ["GET", "POST"],
     credentials: true,
   },
